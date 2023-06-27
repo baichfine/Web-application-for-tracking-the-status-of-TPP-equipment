@@ -1,0 +1,1467 @@
+/* Scroll */
+::-webkit-scrollbar-button {
+  background-repeat:no-repeat;
+  width:5px;
+  height:10px
+}
+::-webkit-scrollbar-track {
+  background-color:white;
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 8px;
+  background-color:#f58220;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color:#f58220;
+}
+::-webkit-resizer{
+  background-repeat:no-repeat;
+  width:4px;
+  height:0px
+}
+::-webkit-scrollbar{
+  width: 4px;
+}
+/* Calendar */
+::-webkit-datetime-edit-month-field:focus { background-color:#f58220; }
+::-webkit-datetime-edit-day-field:focus { background-color:#f58220; }
+::-webkit-datetime-edit-year-field:focus { background-color:#f58220; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { opacity: 0;}
+[type="date"] { background:#fff url(../svg/calendar1.svg) right no-repeat;}
+[type="date"]:focus { background:#fff url(../svg/calendar2.svg) right no-repeat;}
+font {
+    vertical-align: initial !important;
+}
+/* Авторизация */
+.authorization {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font: caption;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  border-top: 3px solid #f58220;
+  color: gray;
+}
+.tableAuth input{
+  width: 70%;
+  height: 25px;
+  letter-spacing: 3px;
+  font-size: 17px;
+  font: caption;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-bottom: 2.5px solid white;
+}
+.tableAuth input:focus {
+  border-bottom: 2.5px solid #f58220;
+  outline:none;
+}
+.tableAuth button{
+  margin-top: 10px;
+  color: white;
+  background-color: #f58220;
+  width: 70%;
+  display: inline-block;
+  font-size: 21px;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-color: #f58220;
+  outline:none;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.tableAuth button:hover {
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.tableAuth span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #800000;
+  letter-spacing: 1px;
+  height: 24px;
+}
+.tableAuth img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+/* Администратор */
+/* Хедер */
+.headAdm {
+  z-index: 10;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  border-bottom: 3px solid #f58220;
+  text-align: center;
+  background-color: #f58220;
+}
+.headAdm table {
+  width: 70%;
+  margin: auto;
+}
+.headAdm button {
+  margin-top: 10px;
+  color: white;
+  background-color: #f58220;
+  width: 90%;
+  height: 40px;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-color: #f58220;
+  border-bottom: 3px solid #f58220;
+  outline:none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.headAdm button:hover {
+  border-bottom: 3px solid white;
+  width: 100%;
+  color: white;
+}
+#clickButton {
+  border-bottom: 3px solid white;
+  width: 100%;
+  color: white;
+}
+/* Личный кабинет */
+.personalArea {
+  margin-top: 3px;
+  margin-left: 10px;
+  width: 14%;
+  position: absolute;
+}
+.personalArea img {
+  height: 25px;
+  width: 25px;
+}
+#yellow {
+  color: #FFFF00;
+  font-weight: 500;
+}
+.personalModal {
+  top: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+  position: fixed;
+  left: 10px;
+  width: 270px;
+  height: 200px;
+  background-color: white;
+  z-index: 9;
+}
+.personalModal table {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+.personalModal button {
+  color: gray;
+  background-color: white;
+  width: 90%;
+  height: 40px;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-color: white;
+  outline:none;
+  transition-duration: 0.9s;
+  cursor: pointer;
+}
+.personalModal button:hover {
+  border-bottom: 2px solid gray;
+  width: 100%;
+}
+/* Боди */
+body {
+  margin: 0px;
+  overflow:  hidden;
+}
+.bodyAdm {
+  top: 60px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f6f6f6;
+}
+/* Филиалы и Оборудование */
+.equip {
+  margin: 0;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font: caption;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-table;
+  padding: 18px;
+}
+.equip table {
+  height: 700px;
+  width: 300px;
+  font-size: 28px;
+  color: gray;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-table;
+  border-right: 1px solid #f58220;
+}
+.equip table:last-child {
+  width: 1300px;
+  border-style: none;
+}
+.equip label {
+  cursor: pointer;
+}
+.equip td {
+  transition-duration: 0.3s;
+  border-left: 3px solid white;
+  padding: 0px;
+  cursor: pointer;
+}
+.equip td:hover {
+  border-left: 3px solid #f58220;
+  color: #f58220;
+  padding: 0px;
+}
+.equipTab {
+  border-collapse: collapse;
+  border: 1px solid #f58220;
+
+}
+.equipTab td {
+  border-left: none;
+  border-bottom: 1px solid #f58220;
+  border-right: 1px solid #f58220;
+  border-top: 1px solid #f58220;
+}
+.equipTab td:hover {
+  border-left: none;
+}
+#clickBranch {
+  border-left: 3px solid #f58220;
+  color: #f58220;
+  padding: 0px;
+}
+/* Ведомости */
+/* Заполнить ведомость Параметры */
+.statement {
+  margin: 0;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font: caption;
+  font-size: 15px;
+  letter-spacing: 2px;
+  width: 95%;
+  height: 100%;
+}
+.statement button {
+  height: 50px;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-style: solid;
+  outline:none;
+  transition-duration: 0.9s;
+  cursor: pointer;
+}
+.buttons {
+  text-align: center;
+}
+.write1 {
+  color: white;
+  background-color: gray;
+  border-color: gray;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.write2 {
+  color: gray;
+  background-color: white;
+  border-color: gray;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.view1 {
+  color: gray;
+  background-color: white;
+  border-color: gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.view2 {
+  color: white;
+  background-color: gray;
+  border-color: gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.blockStatement {
+  margin-top: 50px;
+  color: gray;
+  width: 100%;
+  display: inline-block;
+  height: 80.2%;
+  position: absolute;
+}
+.blockStatement2 {
+  margin-top: 13px;
+  color: gray;
+  width: 100%;
+  display: inline-block;
+  height: 80.2%;
+  position: absolute;
+}
+.statementTab {
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 40%;
+  height: 95%;
+  display: inline-block;
+}
+.statementTab table {
+  text-align: center;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+.statementTab tr {
+  height: 28.5px;
+  cursor: default;
+}
+.statementTab td:nth-child(3) {
+  width: 152px;
+}
+.statementTab input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+}
+.statementTab label {
+  font-size: 18px;
+}
+.statementTab input:focus {
+  outline:none;
+  border-bottom: 3px solid #f58220;
+}
+#tabGray {
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.lineTab td:nth-child(4) {
+  min-width: 30px;
+  border-right: 1px solid gray;
+  vertical-align: middle;
+}
+#lineTabLast {
+  height: 60px;
+  border:1px solid gray;
+}
+#noLine {
+  border-bottom: 1px solid white;
+}
+.rightTextTab {
+  text-align: right;
+  color: gray;
+}
+.leftTextTab {
+  padding-left: 10px;
+  text-align: left;
+  min-width: 400px;
+  font-size: 18px;
+}
+.newleftTextTab {
+  color: #f58220;
+  font-weight: bold;
+  padding-left: 10px;
+  text-align: left;
+  min-width: 400px;
+  font-size: 18px;
+}
+.colorOrange {
+  color: #f58220;
+}
+#weightBold {
+  font-weight: bold;
+}
+#lineTabLast p {
+  margin: 0px;
+}
+.radio {
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 15px !important;
+}
+.radio .label {
+  position: relative;
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  border-radius: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.radio .label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background: #f58220;
+  transform: scale(0);
+  transition: all 0.2s ease;
+  opacity: 0.08;
+  pointer-events: none;
+}
+.radio:hover .label:after {
+  transform: scale(3.6);
+}
+input[type="radio"]:checked + .label {
+  border-color: #f58220;
+}
+input[type="radio"]:checked + .label:after {
+  transform: scale(1);
+  transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+  opacity: 1;
+}
+.hidden {
+  display: none;
+}
+/* Отклонения от нормы */
+.allTab {
+  position: absolute;
+  width: 55%;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 18px;
+  font-size: 15px;
+  background-color: white;
+  height: 95%;
+  border-radius: 8px;
+}
+.dateAndDeviationTab {
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  overflow-y:scroll;
+  height: 60%;
+}
+.dateAndDeviationTab textarea {
+  resize:none;
+  border: 1px solid gray;
+  font-size: 18px;
+  width: 96%;
+  height: 120px;
+}
+.dateAndDeviationTab textarea:focus {
+  border: 1px solid #f58220;
+  outline:none;
+}
+.dateAndDeviationTab div {
+  border-bottom: 3px solid #f58220;
+  margin-bottom: 70px;
+}
+.dateAndDeviationTab div:last-child {
+  margin-bottom: 20px;
+}
+.dateAndDeviationTab input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 0px;
+}
+.dateAndDeviationTab input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+.dateAndDeviationTab p:last-child {
+  min-height: 26px;
+}
+/*Даты ремонта*/
+.dateRepairsTab {
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  bottom: 0;
+}
+.dateRepairsTab input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+}
+.dateRepairsTab input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+.dateRepairsTab table {
+  display: inline-table;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+.dateRepairsTab tr {
+  height: 30px;
+}
+.dateRepairsTab tr:nth-of-type(2n){
+  border-bottom: 1px solid gray;
+}
+.matchingTab {
+  float: right;
+  min-width: 363px !important;
+}
+.matchingTab td:first-child {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+.matchingTab tr {
+  height: 50px;
+  vertical-align: top;
+  border-bottom: 1px solid white !important;
+}
+.matchingTab button {
+  text-align: center;
+  font-size: 16px;
+  height: 50px;
+  background-color: #f58220;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 100%;
+}
+.matchingTab button:hover {
+  border: 3px solid #f58220;
+  background-color: white;
+  color: #f58220;
+}
+#topCenter {
+  text-align: center;
+}
+/*Просмотр ведомостей*/
+.buttonsMonthAndYear {
+  width: 100%;
+  margin-top: 10px;
+}
+.tabMonthAndYear {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+}
+.labelMonthAndYear {
+  color: #f58220;
+  border-style: solid;
+  border-color: #f6f6f6;
+  border-bottom: 2px solid #f6f6f6;
+  transition-duration: 0.9s;
+  cursor: pointer;
+}
+.labelMonthAndYear:hover {
+  border-bottom: 2px solid #f58220;
+}
+.labelYear {
+  color: gray;
+  border-style: solid;
+  border-color: #f6f6f6;
+  border-bottom: 2px solid #f6f6f6;
+  transition-duration: 0.9s;
+  cursor: pointer;
+}
+.labelYear:hover {
+  border-bottom: 2px solid gray;
+}
+.yearModal {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: white;
+  position: fixed;
+  right: 13.4%;
+  margin-top: 5px;
+  width: 140px;
+  height: 150px;
+  background-color: white;
+  z-index: 9;
+  overflow-y: scroll;
+  padding-bottom: 5px;
+}
+.yearModal table {
+  width: 100%;
+  padding: 5px;
+}
+.yearModal td {
+  text-align: center;
+  border-bottom: 1px solid #f58220;
+  height: 30px;
+}
+.year {
+  color: gray;
+}
+.year:hover {
+  color: #f58220;
+}
+#colorYear {
+  color: #f58220;
+  font-weight: bold;
+}
+#labelYearClick {
+  border-bottom: 2px solid gray;
+}
+#clickMonth {
+  border-bottom: 2px solid #f58220;
+}
+/*Годовая ведомость*/
+#statementTabYear {
+  width: 98%;
+}
+#borderLeftTabYear {
+  border-left: 1px solid gray;
+  border-right: none;
+  width: 100px;
+  padding-left: 5px;
+}
+#borderRightTabYear {
+  min-width: 20px;
+  padding-right: 5px;
+}
+#svgTabYear {
+  width: 20px;
+  height: 20px;
+}
+/*ИТС*/
+.its {
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 98%;
+  height: 95%;
+}
+.itsTable {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+.itsTable table {
+  border-top: 1px solid gray;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+.itsTable input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.2s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid #f58220;
+  text-align: center;
+  width: 70%;
+  padding: 0px;
+}
+.itsTable input:focus {
+  outline:none;
+  width: 100%;
+  border-bottom: 3px solid #f58220;
+}
+.itsTable select {
+  width: 100%;
+  font-size: 15px;
+  color: gray;
+  border-color: #f58220;
+  line-height: 1.3;
+  padding: .6em 1.4em .5em .8em;
+  border-radius: .5em;
+  -webkit-appearance: none;
+  background-image: url(../svg/arrow.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right .3em top 50%, 0 0;
+}
+.itsTable select:focus {
+   box-shadow: 0 0 1px 1px #f58220;
+   box-shadow: 0 0 0 3px -moz-mac-focusring;
+   outline: none;
+}
+.itsTable option:checked {
+    outline: none;
+    background-color: #f58220;
+    color: white;
+}
+.itsTable td:nth-child(2), .itsTable td:nth-child(3), .itsTable td:nth-child(4) {
+  width: 150px;
+}
+.itsTable td:nth-child(12){
+  width:62px;
+}
+.itsTable td:nth-child(9){
+  width:100px;
+}
+.itsTable td:nth-child(6), .itsTable td:nth-child(7){
+  width:178px;
+}
+#sticky {
+  color: white;
+  height: 20px;
+}
+#sticky td {
+  position: sticky;
+  top: 0;
+  background-color: #f58220;
+}
+#sticky td:nth-child(8) {
+  width: 350px;
+}
+#ballScore {
+  font-size: 13px;
+  text-align: left;
+}
+.ballButton {
+  font-weight: bold;
+  color: #f58220;
+  background-color: white;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-style: solid;
+  border-color: white;
+  outline:none;
+  cursor: pointer;
+}
+.itsTable tr {
+  height: 70px;
+}
+.headerItsTable {
+  width: 97.753%;
+  top: 0;
+  background-color: white;
+  position: absolute;
+  height: 18px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid gray;
+}
+.footerItsTable {
+  width: 97.753%;
+  background-color: white;
+  position: absolute;
+  height: 18px;
+  border-top: 1px solid gray;
+}
+.totalIts {
+  width: 100%;
+  margin-top: 20px;
+}
+.itsSVG {
+  width: 25px;
+  height: 25px;
+  vertical-align: sub;
+}
+.itsBall {
+  border-bottom: 3px solid white;
+}
+.itsBallChoice {
+  border-bottom: 3px solid #f58220;
+}
+/*Модальное окно Баллы*/
+.ballModal {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  color: gray;
+  width: 500px;
+  background-color: white;
+  z-index: 9;
+  border-radius: 8px;
+  padding: 18px;
+  border: 1px solid #f58220;
+  transition-duration: 0.9s;
+}
+.ballModal table {
+  border: 1px solid gray;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+.ballModal tr {
+  height: 50px;
+}
+.ballModal td {
+  border: 1px solid gray;
+}
+/*Нижняя таблица ИТС*/
+.itsButtom {
+  float: right;
+  width: 100%;
+}
+.itsButtom td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.itsButtom td:nth-child(2n+1) {
+  text-align: right;
+}
+.itsButtom td:nth-child(6){
+  width: 200px;
+}
+.itsButtom td:nth-child(8){
+  width: 70px;
+}
+.itsButtom td:nth-child(2){
+  width: 110px;
+}
+.itsButtom td:nth-child(9){
+  width: 350px;
+}
+.itsButtom  button {
+  text-align: center;
+  font-size: 16px;
+  height: 50px;
+  background-color: #f58220;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 100%;
+}
+.itsButtom  button:hover {
+  border: 3px solid #f58220;
+  background-color: white;
+  color: #f58220;
+}
+.itsButtom  input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 100%;
+  padding: 0px;
+  text-align: left;
+}
+.itsButtom  input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+.hideGroupITS {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.borderClassName {
+  border: 1px solid gray;
+}
+.funcKnot {
+  padding-top: 10px;
+  width: 200px;
+  vertical-align: top;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  text-align: center;
+}
+#fontSize {
+  font-size: 13px;
+}
+/*ИТС год*/
+#borderLeftTabYear2 {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  width: 100px;
+  padding-left: 5px;
+}
+/* Отказы */
+/*Первая таблица*/
+.failures {
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 36%;
+  height: 95%;
+  display: inline-block;
+}
+.failuresTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  display:inline-block;
+  height: 60%;
+  width: 34%;
+}
+.failuresTab table {
+  text-align: center;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+.failuresTab tr {
+  border: 1px solid gray;
+}
+.failuresTab td {
+  border: 1px solid gray;
+}
+.failuresTab td:first-child {
+  width: 230px;
+}
+.failuresTab input {
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 0px;
+  width: 120px;
+  text-align: center;
+}
+.failuresTab input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+#leftTextTab2 {
+  text-align: left;
+  padding-left: 5px;
+}
+#borderLine {
+  border-right: 1px solid #f58220;
+}
+#colorLine {
+  font-size: 15px;
+  background-color: #f58220;
+  color: white;
+  font-weight: bold;
+}
+/*Вторая таблица*/
+.failuresAll {
+  position: absolute;
+  padding: 18px;
+  color: gray;
+  height: 30%;
+  width: 20%;
+  display:inline-block;
+  bottom: 2px;
+}
+.failuresDateTab {
+  overflow-y: auto;
+  height: 100%;
+}
+.failuresDateTab table {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #f58220;
+}
+.failuresDateTab tr {
+  height: 30px;
+  border-bottom: 1px solid #f58220;
+}
+.failuresDateTab tr:first-child td {
+  position: sticky;
+  top: 0;
+  background-color: #f58220;
+}
+.failuresButton {
+  position: absolute;
+  padding: 18px;
+  color: gray;
+  height: 30%;
+  width: 12%;
+  display: inline-block;
+  bottom: 2px;
+  margin-left: 22%;
+  text-align: center;
+}
+.failuresButton button {
+  margin-top: 20px;
+  color: white;
+  background-color: #f58220;
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-color: #f58220;
+  outline:none;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 96%;
+}
+.failuresButton button:hover {
+  width: 100%;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.hoverFailures {
+  color: #f58220;
+  font-weight: bold;
+  border-bottom: 1px solid #f58220;
+  cursor: pointer;
+}
+#hoverFailures:hover {
+  color: #f58220;
+  font-weight: bold;
+  border-bottom: 1px solid #f58220;
+  cursor: pointer;
+}
+.headerfailuresDateTab {
+  width: 89.824%;
+  top: 0;
+  background-color: white;
+  position: absolute;
+  height: 18px;
+}
+.footerfailuresDateTab {
+  width: 89.824%;
+  background-color: white;
+  position: absolute;
+  height: 18px;
+  bottom: 0;
+}
+.white {
+  color: white;
+  vertical-align: middle;
+}
+.white p {
+  margin: 0;
+}
+/*Таблица справка*/
+.allFailuresTab {
+  position: absolute;
+  width: 59%;
+  color: gray;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 18px;
+  font-size: 15px;
+  background-color: white;
+  height: 95%;
+  border-radius: 8px;
+}
+.failuresReferenceTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  overflow-y:scroll;
+  height: 80%;
+}
+.failuresReferenceTab textarea {
+  resize:none;
+  border: 1px solid gray;
+  font-size: 18px;
+  width: 100%;
+  height: 510px;
+}
+.failuresReferenceTab textarea:focus {
+  border: 1px solid #f58220;
+  outline:none;
+}
+.failuresButtonTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  bottom: 0;
+  height: 10%;
+  text-align: right;
+}
+.failuresButtonTab label {
+  margin-right: 20px;
+}
+.failuresButtonTab button {
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  background-color: #f58220;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 34%;
+}
+.failuresButtonTab  button:hover {
+  border: 3px solid #f58220;
+  background-color: white;
+  color: #f58220;
+}
+/*Настройки*/
+.settings {
+  background-color: white;
+  border-radius: 8px;
+  padding: 18px;
+  color: gray;
+  width: 45%;
+  height: 95%;
+  display: inline-block;
+}
+.settingsChoice {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  display:inline-block;
+  height: 7%;
+  width: 43%;
+}
+.settingsChoice table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+.settingsChoice td {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  text-align: center;
+  padding: 0px;
+  cursor: pointer;
+}
+.settingsChoice label {
+    cursor: pointer;
+}
+#clickBranch2 {
+  border-bottom: 3px solid #f58220;
+  color: #f58220;
+}
+.settingsTab {
+  position: absolute;
+  padding: 18px;
+  color: gray;
+  height: 70%;
+  width: 43%;
+  display:inline-block;
+  bottom: 13%;
+}
+.settingsTab table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 70%;
+  border: 1px solid #f58220;
+}
+.settingsTab td {
+  border-top: 1px solid #f58220;
+  border-bottom: 1px solid #f58220;
+}
+.settingsTab td:nth-child(1) {
+  width: 400px;
+  padding-left: 10px;
+
+}
+.settingsTab td:nth-child(2) {
+  width: 100px;
+  text-align: center;
+}
+.settingsTab td:nth-child(3) {
+  width: 270px;
+  text-align: center;
+}
+.hoverTrSettings {
+  color: white;
+  background-color: #f58220;
+  cursor: pointer;
+}
+#hoverTrSettings:hover {
+  color: white;
+  background-color: #f58220;
+  cursor: pointer;
+}
+.settingsButton {
+  position: absolute;
+  padding: 18px;
+  color: gray;
+  height: 10%;
+  width: 43%;
+  bottom: 0;
+  text-align: center;
+}
+.settingsButton button {
+  margin-right: 20px;
+  color: white;
+  background-color: #f58220;
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 3px;
+  border-style: solid;
+  border-color: #f58220;
+  outline:none;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.settingsButton button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.allSettingsTab {
+  position: absolute;
+  width: 50%;
+  color: gray;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 18px;
+  font-size: 15px;
+  background-color: white;
+  height: 95%;
+  border-radius: 8px;
+}
+.settingsLogOrData {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  text-align: center;
+}
+#newSize {
+  width: 300px;
+}
+.settingsUsersTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  overflow-y:scroll;
+  height: 66%;
+  top:12%;
+}
+.settingsUsersTab table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+.settingsUsersTab td {
+  border-bottom: 1px solid #f58220;
+}
+.settingsUsersTab td:first-child {
+  font-weight: bold;
+  width: 180px;
+}
+.settingsUsersTab input {
+  font-size: 15px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 0px;
+  width: 250px;
+  text-align: left;
+}
+.settingsUsersTab input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+.settingsUsersTab img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+.settingsButtonTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  bottom: 0;
+  height: 10%;
+  text-align: right;
+}
+.settingsButtonTab label {
+  margin-right: 20px;
+}
+.settingsButtonTab button {
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  background-color: #f58220;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 40%;
+}
+.settingsButtonTab  button:hover {
+  border: 3px solid #f58220;
+  background-color: white;
+  color: #f58220;
+}
+/*Личные данные*/
+.personalDataTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  border-radius: 8px;
+  color: gray;
+  display: inline-block;
+  overflow-y: scroll;
+  height: 100%;
+  width: 98%;
+  text-align: center;
+}
+.dataTab {
+  width: 40%;
+  height: 60%;
+  margin: auto;
+}
+.dataTab table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+}
+.dataTab td {
+  border-bottom: 1px solid #f58220;
+}
+.dataTab td:first-child {
+  font-weight: bold;
+  width: 180px;
+}
+.dataTab input {
+  font-size: 18px;
+  border-style: none;
+  transition-duration: 0.4s;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 0px;
+  width: 250px;
+  text-align: left;
+}
+.dataTab input:focus {
+  border-bottom: 3px solid #f58220;
+  outline:none;
+}
+.dataTab img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  cursor: pointer;
+}
+.personalButtonTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 40%;
+  height: 10%;
+  text-align: left;
+}
+.personalButtonTab label {
+  margin-right: 20px;
+}
+.personalButtonTab button {
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+  background-color: #f58220;
+  color: white;
+  border-radius: 8px;
+  border: 3px solid white;
+  width: 40%;
+}
+.personalButtonTab  button:hover {
+  border: 3px solid #f58220;
+  background-color: white;
+  color: #f58220;
+}
+/*Уведомления*/
+.notiTab {
+  position: absolute;
+  background-color: white;
+  padding: 18px;
+  color: gray;
+  width: 94%;
+  display:inline-block;
+  overflow-y:scroll;
+  height: 66%;
+  top:12%;
+  font-size: 15px;
+}
+.notiTab table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.notiTab tr {
+  height: 70px;
+}
+.notiTab tr:first-child {
+  text-align: center;
+}
+.notiTab td {
+  border-bottom: 1px solid #f58220;
+}
+.notiTab td:first-child {
+  font-weight: bold;
+  width: 180px;
+}
+.notiTab td:last-child {
+  text-align: center;
+}
+#sizeTab {
+  height: 40%;
+}
+#black {
+  color: #000000;
+  font-weight: 700;
+}
+#green {
+  color: green;
+}
+#red {
+  color: red;
+}
+.footAdm {
+  z-index: 10;
+  border-top: 3px solid #f58220;
+  bottom:0px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: #f58220;
+}
